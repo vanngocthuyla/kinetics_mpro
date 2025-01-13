@@ -153,7 +153,7 @@ class TraceConverter:
                     new_key = 'DeltaG_' + key[4:]
                 else:
                     new_key = 'DeltaG_' + key[5:]
-                trace_DeltaG[new_key] = -(RT * self.trace[key])
+                trace_DeltaG[new_key] = RT * self.trace[key]
             else:
                 trace_DeltaG[key] = self.trace[key]
         return trace_DeltaG
