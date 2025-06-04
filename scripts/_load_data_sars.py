@@ -222,7 +222,7 @@ def load_data_wt(fit_wildtype_Nashed=False, fit_wildtype_Vuong=False,
                          'logMtot': np.log(np.array([0.75, 0.5, 0.375, 0.25, 0.1875, 0.125, 0.0938, 0.0625, 0.0469, 2, 1, 0.5, 0.25, 0.125, 0.0625, 0.0313])*1E-6), # M
                          'logStot': np.array([np.log(200E-6)]*16), # 5 uL of 5mM substrate diluted with 95 uL reaction mixture,
                          'logItot': np.array([np.log(1E-20)]*16), #None
-                         'v': np.array([6.71, 3.17, 1.99, 0.89, 0.58, 0.41, 0.195, 0.147, 0.072, 15, 11.4931, 9.643, 5.7465, 3.7439, 1.716, 0.702])*1E-6, # M min^{-1}
+                         'v': np.array([6.71, 3.17, 1.99, 0.89, 0.58, 0.41, 0.195, 0.147, 0.072, 30, 11.493, 4.8215, 1.4366, 0.46799, 0.10725, 0.021973])*1E-6, # M min^{-1}
                          'x':'logMtot'})
             
             temp.append({'type':'kinetics', 'plate': None,
